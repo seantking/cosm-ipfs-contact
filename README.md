@@ -38,8 +38,8 @@ const { contractAddress } = await fredClient.instantiate(codeId, initMsg, "Test"
 
 Execute:
 ```
-const addFileObj = {add_file_address: {ipfs_address: "aaaa-bbbbb-ccccc-ddddd-ipfs-address"}};
-fredClient.execute(contractAddress, addFileObj);
+const addFileMsg = {add_file_address: {ipfs_address: "aaaa-bbbbb-ccccc-ddddd-ipfs-address"}};
+fredClient.execute(contractAddress, addFileMsg);
 ```
 
 Query:

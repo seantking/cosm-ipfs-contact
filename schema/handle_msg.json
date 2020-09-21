@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HandleMsg",
+  "anyOf": [
+    {
+      "type": "object",
+      "required": [
+        "add_file_address"
+      ],
+      "properties": {
+        "add_file_address": {
+          "type": "object",
+          "required": [
+            "ipfs_address"
+          ],
+          "properties": {
+            "ipfs_address": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
